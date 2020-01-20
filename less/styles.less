@@ -1,0 +1,25 @@
+@dark-green: #1a5336;
+@light-green: #28a745;
+@white: #fff;
+
+.navbar-dark .navbar-nav .nav-link,
+a {
+	color: @dark-green;
+}
+
+nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-success {
+    box-shadow: 0 3px 4px 0px rgba(0,0,0,.2);
+} 
+
+.card-header.collapsed {
+	background: @white;
+}
+
+.card-header:not(.collapsed) {
+  color: @white;
+  background: @dark-green;
+}
+
+a:hover {
+	color: @light-green;
+}
