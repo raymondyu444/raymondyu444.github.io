@@ -2,9 +2,47 @@
 @light-green: #28a745;
 @white: #fff;
 
+@desktop:   ~"only screen and (min-width: 1220px)";
+
+@tablet:    ~"only screen and (min-width: 768px) and (max-width: 991px)";
+
+@media @desktop {
+  .footer {
+    padding-bottom: 100px;;
+  }
+}
+
+@media @tablet {
+  .footer {
+    padding-bottom: 275px;
+  }
+}
+
+.fas {
+	color: @light-green;
+}
+
+.far {
+	.fas();	
+}
+
 .navbar-dark .navbar-nav .nav-link,
 a {
-	color: @dark-green;
+	color: @white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+a:hover {
+	text-decoration: underline;
+}
+
+.card-title,
+a.disclaimer:hover {
+	.fas();	
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-success {
@@ -12,7 +50,12 @@ nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-success {
 } 
 
 .card-header.collapsed {
+	color: @dark-green;
 	background: @white;
+}
+
+.card-header.collapsed:hover{
+	.fas();
 }
 
 .card-header:not(.collapsed) {
@@ -20,6 +63,10 @@ nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-success {
   background: @dark-green;
 }
 
-a:hover {
-	color: @light-green;
+a.disclaimer {
+	color: @dark-green;
+}
+
+a.disclaimer:hover {
+	text-decoration: none;
 }

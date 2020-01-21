@@ -4,6 +4,7 @@ $(document).ready(function() {
 	$('.disclaimer').click(function() {
 	  alert('Please read the disclaimer!!!');
 	});
+    
 });
 
 $(window).resize(function () {
